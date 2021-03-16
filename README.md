@@ -5,9 +5,14 @@
 5) clone 'https://github.com/anittajohn/project_student_det.git' url i using
     git clone 'https://github.com/anittajohn/project_student_det.git'
 6) if you don't have composer first install( https://getcomposer.org/download/)
-7) open your project folder in command prompt 
-   then type 'php artisan serve' in command prompt then enter you will get a url 
-8) run that url in  your brower
-9) then set database in phpmyadmin (db name: stud_management)
-10) set db details in .env file
+7) Rename .env.example file to .env example-app project root and fill the database information.
+  ( create database in phpmyadmin (db name: stud_management) and update that to .env file)
+8) open your project folder in vscode
+    then open terminal and  follow the following steps,
+    a) Run 'composer install '
+    b) Run 'php artisan key:generate'
+    c) Run 'php artisan migrate'
+    d) Run 'php artisan serve'
+9) yow will get a url run it  your brower
+Thank you
 
